@@ -9,7 +9,7 @@ class Banner extends React.Component {
 
     render() {
         return (
-            <div data-aos="fade-in">
+            <div data-aos="fade-in" data-aos-easing="ease-in-out">
                 <Carousel touch={true} wrap={true}>
                     <Carousel.Item>
                         <img

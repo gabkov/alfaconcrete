@@ -8,6 +8,8 @@ import Mission from './components/Mission';
 import "react-bootstrap"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Implementation from './components/Implementation';
+import Gallery from 'react-grid-gallery';
 
 
 class App extends Component {
@@ -27,6 +29,8 @@ class App extends Component {
         <Banner />
         <Mission />
         <br></br>
+
+        <Implementation/>
         <br></br>
         <br></br>
         <br></br>
