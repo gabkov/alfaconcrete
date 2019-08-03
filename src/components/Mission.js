@@ -12,7 +12,7 @@ class Mission extends React.Component {
 
     render() {
         return (
-            <div data-aos="zoom-in-up" data-aos-easing="ease-in-out">
+            <div class="marginbottom" data-aos="zoom-in-up" data-aos-easing="ease-in-out">
                 <Card>
                     <Card.Header as="h5">Küldetésünk</Card.Header>
                     <Card.Body>

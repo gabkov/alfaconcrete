@@ -28,8 +28,6 @@ class App extends Component {
       <div class="container">
         <Banner />
         <Mission />
-        <br></br>
-
         <Implementation/>
         <br></br>
         <br></br>

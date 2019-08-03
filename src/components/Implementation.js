@@ -97,99 +97,112 @@ class Implementation extends React.Component {
                 <Card>
                     <Card.Header as="h5">Munkáink</Card.Header>
                     <Card.Body>
+
                         <ul className="list-unstyled">
-                            <div class="works">
-                                <Media as="li">
-                                    <img
-                                        onClick={() => this.setState({ panelOpen: !panelOpen })}
-                                        aria-controls="panel-collapse"
-                                        aria-expanded={panelOpen}
-                                        width={64}
-                                        height={64}
-                                        className="mr-3"
-                                        src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
-                                        alt="Generic placeholder"
-                                    />
-                                    <Media.Body>
-                                        <h5>3D Panelek</h5>
-                                        <p>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                            fringilla. Donec lacinia congue felis in faucibus.
+                            <Card>
+                                <Card.Body>
+                                    <div class="works">
+                                        <Media as="li">
+                                            <img
+                                                onClick={() => this.setState({ panelOpen: !panelOpen })}
+                                                aria-controls="panel-collapse"
+                                                aria-expanded={panelOpen}
+                                                width={90}
+                                                height={90}
+                                                className="mr-3"
+                                                src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
+                                                alt="Generic placeholder"
+                                            />
+                                            <Media.Body>
+                                                <h5>3D Panelek</h5>
+                                                <p>
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                    ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+                                                    tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                                    fringilla. Donec lacinia congue felis in faucibus.
       </p>
-                                        <div class="pictures">
-                                            <Collapse in={panelOpen} >
-                                                <div id="panel-collapse">
-                                                    <Gallery images={this.PANELIMAGES} enableImageSelection={false} />
+                                                <div class="pictures">
+                                                    <Collapse in={panelOpen} >
+                                                        <div id="panel-collapse">
+                                                            <Gallery images={this.PANELIMAGES} enableImageSelection={false} />
+                                                        </div>
+                                                    </Collapse>
                                                 </div>
-                                            </Collapse>
-                                        </div>
-                                    </Media.Body>
-                                </Media>
-                            </div>
+                                            </Media.Body>
+                                        </Media>
+                                    </div>
+                                </Card.Body>
+                            </Card>
 
-                            <div class="works">
-                                <Media as="li">
-                                    <img
-                                        onClick={() => this.setState({ tableOpen: !tableOpen })}
-                                        aria-controls="table-collapse"
-                                        aria-expanded={tableOpen}
-                                        width={64}
-                                        height={64}
-                                        className="mr-3"
-                                        src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
-                                        alt="Generic placeholder"
-                                    />
-                                    <Media.Body>
-                                        <h5>Asztalok</h5>
-                                        <p>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                            fringilla. Donec lacinia congue felis in faucibus.
+                            <Card>
+                                <Card.Body>
+                                    <div class="works">
+                                        <Media as="li">
+                                            <img
+                                                onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                aria-controls="table-collapse"
+                                                aria-expanded={tableOpen}
+                                                width={90}
+                                                height={90}
+                                                className="mr-3"
+                                                src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
+                                                alt="Generic placeholder"
+                                            />
+                                            <Media.Body>
+                                                <h5>Asztalok</h5>
+                                                <p>
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                    ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+                                                    tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                                    fringilla. Donec lacinia congue felis in faucibus.
       </p>
-                                        <div class="pictures">
-                                            <Collapse in={tableOpen} >
-                                                <div id="table-collapse">
-                                                    <Gallery images={this.TABLEIMAGES} enableImageSelection={false} />
+                                                <div class="pictures">
+                                                    <Collapse in={tableOpen} >
+                                                        <div id="table-collapse">
+                                                            <Gallery images={this.TABLEIMAGES} enableImageSelection={false} />
+                                                        </div>
+                                                    </Collapse>
                                                 </div>
-                                            </Collapse>
-                                        </div>
-                                    </Media.Body>
-                                </Media>
-                            </div>
+                                            </Media.Body>
+                                        </Media>
+                                    </div>
+                                </Card.Body>
+                            </Card>
 
-                            <div class="works">
-                                <Media as="li">
-                                    <img
-                                        onClick={() => this.setState({ vaseOpen: !vaseOpen })}
-                                        aria-controls="vase-collapse"
-                                        aria-expanded={vaseOpen}
-                                        width={64}
-                                        height={64}
-                                        className="mr-3"
-                                        src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
-                                        alt="Generic placeholder"
-                                    />
-                                    <Media.Body>
-                                        <h5>Vázák, szobrok</h5>
-                                        <p>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                                            fringilla. Donec lacinia congue felis in faucibus.
+                            <Card>
+                                <Card.Body>
+                                    <div class="works">
+                                        <Media as="li">
+                                            <img
+                                                onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                aria-controls="vase-collapse"
+                                                aria-expanded={vaseOpen}
+                                                width={90}
+                                                height={90}
+                                                className="mr-3"
+                                                src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
+                                                alt="Generic placeholder"
+                                            />
+                                            <Media.Body>
+                                                <h5>Vázák, szobrok</h5>
+                                                <p>
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                    ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+                                                    tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                                                    fringilla. Donec lacinia congue felis in faucibus.
       </p>
-                                        <div class="pictures">
-                                            <Collapse in={vaseOpen} >
-                                                <div class="pictures" id="vase-collapse">
-                                                    <Gallery images={this.VASEIMAGES} enableImageSelection={false} />
+                                                <div class="pictures">
+                                                    <Collapse in={vaseOpen} >
+                                                        <div class="pictures" id="vase-collapse">
+                                                            <Gallery images={this.VASEIMAGES} enableImageSelection={false} />
+                                                        </div>
+                                                    </Collapse>
                                                 </div>
-                                            </Collapse>
-                                        </div>
-                                    </Media.Body>
-                                </Media>
-                            </div>
+                                            </Media.Body>
+                                        </Media>
+                                    </div>
+                                </Card.Body>
+                            </Card>
                         </ul>
                     </Card.Body>
                 </Card>
