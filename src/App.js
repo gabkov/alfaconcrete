@@ -10,8 +10,23 @@ import "react-bootstrap"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Implementation from './components/Implementation';
-import Gallery from 'react-grid-gallery';
+import Particles from 'react-particles-js';
 
+
+const particlesOptions = {
+  "particles": {
+    "line_linked": {
+      "color": "#000000"
+    },
+    "number": {
+      "value": 150
+    },
+    "size": {
+      "value": 5
+    }
+  }
+
+};
 
 class App extends Component {
   constructor(props) {
@@ -26,16 +41,21 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
-        <Banner />
-        <Mission />
-        <Implementation/>
-        <Request/>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+      <div>
+        <Particles className="particles"
+          params={particlesOptions}
+        />
+        <div class="container">
+          <Banner />
+          <Mission />
+          <Implementation />
+          <Request />
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
       </div>
     )
   }
