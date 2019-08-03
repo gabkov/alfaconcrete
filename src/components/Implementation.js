@@ -7,37 +7,91 @@ class Implementation extends React.Component {
     constructor() {
         super();
         this.state = {
-            panelOpen: false
+            panelOpen: true,
+            tableOpen: false,
+            vaseOpen: false
         }
         this.PANELIMAGES =
             [{
-                src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 174,
-            },
-            {
-                src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+                src: "https://images.pexels.com/photos/1092369/pexels-photo-1092369.jpeg?cs=srgb&dl=cement-colors-concrete-1092369.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/1092369/pexels-photo-1092369.jpeg?cs=srgb&dl=cement-colors-concrete-1092369.jpg&fm=jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
+                thumbnailCaption: "Beton"
+            },
+            {
+                src: "https://images.pexels.com/photos/908286/pexels-photo-908286.jpeg?cs=srgb&dl=close-up-concrete-dark-908286.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/908286/pexels-photo-908286.jpeg?cs=srgb&dl=close-up-concrete-dark-908286.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Feketés"
             },
 
             {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+                src: "https://images.pexels.com/photos/247719/pexels-photo-247719.jpeg?cs=srgb&dl=architecture-background-black-and-white-247719.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/247719/pexels-photo-247719.jpeg?cs=srgb&dl=architecture-background-black-and-white-247719.jpg&fm=jpg",
                 thumbnailWidth: 320,
-                thumbnailHeight: 212
+                thumbnailHeight: 212,
+                thumbnailCaption: "Stabil"
             },
-        ]
+            ]
 
+        this.TABLEIMAGES =
+            [{
+                src: "https://images.pexels.com/photos/1498964/pexels-photo-1498964.jpeg?cs=srgb&dl=coffee-communication-compose-1498964.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/1498964/pexels-photo-1498964.jpeg?cs=srgb&dl=coffee-communication-compose-1498964.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+            {
+                src: "https://images.pexels.com/photos/2092058/pexels-photo-2092058.jpeg?cs=srgb&dl=contemporary-decoration-dining-table-2092058.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/2092058/pexels-photo-2092058.jpeg?cs=srgb&dl=contemporary-decoration-dining-table-2092058.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+
+            {
+                src: "https://images.pexels.com/photos/2387754/pexels-photo-2387754.jpeg?cs=srgb&dl=bedside-table-book-cactus-2387754.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/2387754/pexels-photo-2387754.jpeg?cs=srgb&dl=bedside-table-book-cactus-2387754.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+            ]
+
+        this.VASEIMAGES =
+            [{
+                src: "https://images.pexels.com/photos/870512/flowers-vase-decor-interior-870512.jpeg?cs=srgb&dl=bloom-blossom-flora-870512.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/870512/flowers-vase-decor-interior-870512.jpeg?cs=srgb&dl=bloom-blossom-flora-870512.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+            {
+                src: "https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?cs=srgb&dl=cactus-cactus-plant-contemporary-1005058.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?cs=srgb&dl=cactus-cactus-plant-contemporary-1005058.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+
+            {
+                src: "https://images.pexels.com/photos/5939/blue-glass-flower-decoration.jpg?cs=srgb&dl=alcohol-blue-bottle-5939.jpg&fm=jpg",
+                thumbnail: "https://images.pexels.com/photos/5939/blue-glass-flower-decoration.jpg?cs=srgb&dl=alcohol-blue-bottle-5939.jpg&fm=jpg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Levél"
+            },
+            ]
     }
 
     componentDidMount() {
     }
 
     render() {
-        const { panelOpen } = this.state;
+        const { panelOpen, tableOpen, vaseOpen } = this.state;
         return (
             <div data-aos="zoom-in-up" data-aos-easing="ease-in-out">
                 <Card>
@@ -64,11 +118,13 @@ class Implementation extends React.Component {
                                             tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                             fringilla. Donec lacinia congue felis in faucibus.
       </p>
-                                        <Collapse in={panelOpen} >
-                                            <div id="panel-collapse">
-                                                <Gallery images={this.PANELIMAGES} />
-                                            </div>
-                                        </Collapse>
+                                        <div class="pictures">
+                                            <Collapse in={panelOpen} >
+                                                <div id="panel-collapse">
+                                                    <Gallery images={this.PANELIMAGES} enableImageSelection={false} />
+                                                </div>
+                                            </Collapse>
+                                        </div>
                                     </Media.Body>
                                 </Media>
                             </div>
@@ -76,6 +132,9 @@ class Implementation extends React.Component {
                             <div class="works">
                                 <Media as="li">
                                     <img
+                                        onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                        aria-controls="table-collapse"
+                                        aria-expanded={tableOpen}
                                         width={64}
                                         height={64}
                                         className="mr-3"
@@ -90,6 +149,13 @@ class Implementation extends React.Component {
                                             tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                             fringilla. Donec lacinia congue felis in faucibus.
       </p>
+                                        <div class="pictures">
+                                            <Collapse in={tableOpen} >
+                                                <div id="table-collapse">
+                                                    <Gallery images={this.TABLEIMAGES} enableImageSelection={false} />
+                                                </div>
+                                            </Collapse>
+                                        </div>
                                     </Media.Body>
                                 </Media>
                             </div>
@@ -97,6 +163,9 @@ class Implementation extends React.Component {
                             <div class="works">
                                 <Media as="li">
                                     <img
+                                        onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                        aria-controls="vase-collapse"
+                                        aria-expanded={vaseOpen}
                                         width={64}
                                         height={64}
                                         className="mr-3"
@@ -111,6 +180,13 @@ class Implementation extends React.Component {
                                             tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
                                             fringilla. Donec lacinia congue felis in faucibus.
       </p>
+                                        <div class="pictures">
+                                            <Collapse in={vaseOpen} >
+                                                <div class="pictures" id="vase-collapse">
+                                                    <Gallery images={this.VASEIMAGES} enableImageSelection={false} />
+                                                </div>
+                                            </Collapse>
+                                        </div>
                                     </Media.Body>
                                 </Media>
                             </div>
