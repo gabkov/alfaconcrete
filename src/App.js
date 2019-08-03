@@ -7,7 +7,7 @@ import Mission from './components/Mission';
 import Request from './components/Request';
 import Team from './components/Team';
 
-import "react-bootstrap"
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Implementation from './components/Implementation';
