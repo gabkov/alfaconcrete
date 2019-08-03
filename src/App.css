@@ -16,3 +16,7 @@
 .marginbottom {
   margin-bottom: 30px;
 }
+
+.mr-3 {
+  cursor: pointer
+}

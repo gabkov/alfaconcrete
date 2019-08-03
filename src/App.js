@@ -4,6 +4,7 @@ import "./decalare_modules.d.ts";
 
 import Banner from './components/Banner.js';
 import Mission from './components/Mission';
+import Request from './components/Request';
 
 import "react-bootstrap"
 import AOS from 'aos';
@@ -29,6 +30,7 @@ class App extends Component {
         <Banner />
         <Mission />
         <Implementation/>
+        <Request/>
         <br></br>
         <br></br>
         <br></br>
