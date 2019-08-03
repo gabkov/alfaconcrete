@@ -3,6 +3,7 @@ import { Media, Card, Button, Collapse } from "react-bootstrap";
 import Gallery from 'react-grid-gallery';
 import posed from "react-pose";
 import styled from "styled-components";
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 
 const Container = styled.div``;
@@ -22,8 +23,8 @@ class Implementation extends React.Component {
             tableOpen: false,
             vaseOpen: false,
             panelHovering: false,
-            tableHovering : false,
-            vaseHovering : false
+            tableHovering: false,
+            vaseHovering: false
         }
         this.PANELIMAGES =
             [{
@@ -118,23 +119,18 @@ class Implementation extends React.Component {
                                     <div class="works">
 
                                         <Media as="li">
-                                            <Container>
-                                                <StyledSquare
-                                                    pose={this.state.panelHovering ? "hovered" : "idle"}
-                                                    onMouseEnter={() => this.setState({ panelHovering: true })}
-                                                    onMouseLeave={() => this.setState({ panelHovering: false })}>
+                                            <MDBView hover zoom>
                                                     <img
-                                                        onClick={() => this.setState({ panelOpen: !panelOpen })}
-                                                        aria-controls="panel-collapse"
-                                                        aria-expanded={panelOpen}
-                                                        width={90}
-                                                        height={90}
-                                                        className="mr-3"
-                                                        src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
-                                                        alt="Generic placeholder"
-                                                    />
-                                                </StyledSquare>
-                                            </Container>
+                                                onClick={() => this.setState({ panelOpen: !panelOpen })}
+                                                aria-controls="panel-collapse"
+                                                aria-expanded={panelOpen}
+                                                width={90}
+                                                height={90}
+                                                className="mr-3"
+                                                src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
+                                                alt="Generic placeholder"
+                                            />
+                                            </MDBView>
                                             <Media.Body>
                                                 <h5>3D Panelek</h5>
                                                 <p>
