@@ -12,7 +12,7 @@ class Request extends React.Component {
     render() {
         const { open } = this.state;
         return (
-            <div data-aos="flip-right" data-aos-once="true" data-aos-duration="1000">
+            <div class="marginbottom" data-aos="flip-right" data-aos-once="true" data-aos-duration="1000">
                 <Button
                     onClick={() => this.setState({ open: !open })}
                     aria-controls="example-collapse-text"

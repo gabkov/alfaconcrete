@@ -5,6 +5,7 @@ import "./decalare_modules.d.ts";
 import Banner from './components/Banner.js';
 import Mission from './components/Mission';
 import Request from './components/Request';
+import Team from './components/Team';
 
 import "react-bootstrap"
 import AOS from 'aos';
@@ -18,8 +19,9 @@ const particlesOptions = {
     "line_linked": {
       "color": "#000000"
     },
+    "density_auto" : true,
     "number": {
-      "value": 150
+      "value": 200
     },
     "size": {
       "value": 5
@@ -42,14 +44,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Particles className="particles"
+        <div class="particles">
+        <Particles
           params={particlesOptions}
         />
+        </div>
         <div class="container">
           <Banner />
           <Mission />
           <Implementation />
           <Request />
+          <Team />
           <br></br>
           <br></br>
           <br></br>
