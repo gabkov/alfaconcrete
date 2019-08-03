@@ -50,7 +50,7 @@ class Banner extends React.Component {
                     </Carousel.Item>
                 </Carousel>
                 <div id="alfabanner" class="jumbotron text-center">
-                    <h1 class="display-4">Alfaconcrete Studio</h1>
+                    <h1 class="display-4">Alfaconcrete Studio LOL</h1>
                 </div>
             </div>
         )
