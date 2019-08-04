@@ -14,7 +14,7 @@ class Team extends React.Component {
 
     render() {
         return (
-            <div class="marginbottom" data-aos="zoom-in-up">
+            <div class="container marginbottom" data-aos="zoom-in-up">
                 <Card>
                     <Card.Body>
                         <Media>
