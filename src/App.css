@@ -26,7 +26,7 @@ body {
 }
 
 .mr-3 {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .particles {
@@ -50,4 +50,12 @@ body {
 
 .img-hover-zoom:hover { 
   transform: scale(1.1); 
+}
+
+.glyphicon {
+  cursor: pointer;
+}
+
+.main-images {
+  border-radius: 10px;
 }

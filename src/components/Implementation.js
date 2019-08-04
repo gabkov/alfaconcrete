@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Card, Button, Collapse } from "react-bootstrap";
+import { Media, Card, Button, Collapse, Image } from "react-bootstrap";
 import Gallery from 'react-grid-gallery';
 
 
@@ -7,7 +7,7 @@ class Implementation extends React.Component {
     constructor() {
         super();
         this.state = {
-            panelOpen: true,
+            panelOpen: false,
             tableOpen: false,
             vaseOpen: false,
             panelHovering: false,
@@ -105,10 +105,9 @@ class Implementation extends React.Component {
                             <Card>
                                 <Card.Body>
                                     <div class="works">
-
                                         <Media as="li">
                                             <div class="img-hover-zoom">
-                                                <img
+                                                <Image
                                                     onClick={() => this.setState({ panelOpen: !panelOpen })}
                                                     aria-controls="panel-collapse"
                                                     aria-expanded={panelOpen}
@@ -117,10 +116,22 @@ class Implementation extends React.Component {
                                                     className="mr-3"
                                                     src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
                                                     alt="Generic placeholder"
+                                                    rounded
                                                 />
                                             </div>
                                             <Media.Body>
-                                                <h5>3D Panelek</h5>
+                                                <div class="d-flex">
+                                                    <h5 class="mr-auto p-2">3D Panelek</h5>
+                                                    {!panelOpen ?
+                                                        <i class="glyphicon glyphicon-chevron-down p-2"
+                                                            onClick={() => this.setState({ panelOpen: !panelOpen })}
+                                                        ></i>
+                                                        :
+                                                        <i class="glyphicon glyphicon-chevron-up p-2"
+                                                            onClick={() => this.setState({ panelOpen: !panelOpen })}
+                                                        ></i>
+                                                    }
+                                                </div>
                                                 <p>
                                                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                                                     ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
@@ -146,7 +157,7 @@ class Implementation extends React.Component {
                                     <div class="works">
                                         <Media as="li">
                                             <div class="img-hover-zoom">
-                                                <img
+                                                <Image
                                                     onClick={() => this.setState({ tableOpen: !tableOpen })}
                                                     aria-controls="table-collapse"
                                                     aria-expanded={tableOpen}
@@ -155,10 +166,22 @@ class Implementation extends React.Component {
                                                     className="mr-3"
                                                     src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
                                                     alt="Generic placeholder"
+                                                    rounded
                                                 />
                                             </div>
                                             <Media.Body>
-                                                <h5>Asztalok</h5>
+                                                <div class="d-flex">
+                                                    <h5 class="mr-auto p-2">Asztalok</h5>
+                                                    {!tableOpen ?
+                                                        <i class="glyphicon glyphicon-chevron-down p-2"
+                                                            onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                        ></i>
+                                                        :
+                                                        <i class="glyphicon glyphicon-chevron-up p-2"
+                                                            onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                        ></i>
+                                                    }
+                                                </div>
                                                 <p>
                                                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                                                     ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
@@ -183,7 +206,7 @@ class Implementation extends React.Component {
                                     <div class="works">
                                         <Media as="li">
                                             <div class="img-hover-zoom">
-                                                <img
+                                                <Image
                                                     onClick={() => this.setState({ vaseOpen: !vaseOpen })}
                                                     aria-controls="vase-collapse"
                                                     aria-expanded={vaseOpen}
@@ -192,10 +215,23 @@ class Implementation extends React.Component {
                                                     className="mr-3"
                                                     src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
                                                     alt="Generic placeholder"
+                                                    rounded
                                                 />
                                             </div>
                                             <Media.Body>
-                                                <h5>Vázák, szobrok</h5>
+                                                <div class="d-flex">
+                                                    <h5 class="mr-auto p-2">Vázák, szobrok</h5>
+                                                    {!vaseOpen ?
+                                                        <i class="glyphicon glyphicon-chevron-down p-2"
+                                                            onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                        ></i>
+                                                        :
+                                                        <i class="glyphicon glyphicon-chevron-up p-2"
+                                                            onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                        ></i>
+                                                    }
+
+                                                </div>
                                                 <p>
                                                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                                                     ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
