@@ -67,3 +67,13 @@
   text-align: center;
   margin: 20px;
 }
+
+.request-class {
+  background-color: forestgreen;
+  color: white;  
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  background-color: forestgreen;
+}
