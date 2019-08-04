@@ -5,7 +5,6 @@ class NavigationBar extends React.Component {
 
     render() {
         return (
-            <div data-aos="fade-in">
                 <Navbar sticky="top">
                     <Container>
                         <Dropdown>
@@ -23,7 +22,6 @@ class NavigationBar extends React.Component {
                         </Dropdown>
                     </Container>
                 </Navbar>
-            </div>
         );
     }
 }
