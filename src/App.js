@@ -7,6 +7,7 @@ import Mission from './components/Mission';
 import Request from './components/Request';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,7 +21,7 @@ const particlesOptions = {
     "line_linked": {
       "color": "#000000"
     },
-    "density_auto" : true,
+    "density_auto": true,
     "number": {
       "value": 200
     },
@@ -46,7 +47,7 @@ class App extends Component {
     return (
       <div>
         <div class="particles">
-        {/* <Particles
+          {/* <Particles
           params={particlesOptions}
         /> */}
         </div>
@@ -56,12 +57,8 @@ class App extends Component {
           <Implementation />
           <Request />
           <Team />
-          <Contact/>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+          <Contact />
+          <Footer/>
         </div>
       </div>
     )
