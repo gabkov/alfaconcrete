@@ -23,7 +23,7 @@ const particlesOptions = {
     },
     "density_auto": true,
     "number": {
-      "value": 200
+      "value": 500
     },
     "size": {
       "value": 5
@@ -46,11 +46,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div class="particles">
-          {/* <Particles
-          params={particlesOptions}
-        /> */}
-        </div>
         <div class="container">
           <Banner />
           <Mission />
@@ -58,7 +53,8 @@ class App extends Component {
           <Request />
           <Team />
           <Contact />
-          <Footer/>
+          <Footer />
+
         </div>
       </div>
     )
