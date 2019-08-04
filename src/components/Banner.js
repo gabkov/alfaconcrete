@@ -6,7 +6,7 @@ class Banner extends React.Component {
 
     render() {
         return (
-            <div data-aos="fade-in" data-aos-easing="ease-in-out">
+            <div data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="1000">
                 <Carousel wrap={true}>
                     <Carousel.Item>
                         <img

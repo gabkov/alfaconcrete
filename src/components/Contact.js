@@ -9,7 +9,7 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div class="marginbottom" data-aos="zoom-in-up">
+            <div class="marginbottom" data-aos="zoom-in-up" data-aos-duration="1000">
                 <Card >
                     <Card.Header>Kapcsolat</Card.Header>
                     <Card.Body>
