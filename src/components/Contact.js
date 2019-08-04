@@ -1,0 +1,41 @@
+import React from 'react';
+import { Card, ListGroup } from 'react-bootstrap';
+
+class Contact extends React.Component {
+    constructor() {
+        super();
+        this.state = { someKey: 'someValue' };
+    }
+
+    render() {
+        return (
+            <div class="marginbottom" data-aos="zoom-in-up">
+                <Card >
+                    <Card.Header>Kapcsolat</Card.Header>
+                    <Card.Body>
+                        <ListGroup variant="flush">
+                            <ListGroup.Item>Tel.szám: +36 30 69 69 696</ListGroup.Item>
+                            <ListGroup.Item>3200 Gyöngyös Bármilyen utca 10.</ListGroup.Item>
+                            <ListGroup.Item>
+                                <img class="socialicon img-hover-zoom" src="http://monarchiaoperett.hu/images/instagram-2-icon-256.png"
+                                    height="40"
+                                    width="40"
+                                ></img>
+                                <img class="socialicon img-hover-zoom" src="http://files.softicons.com/download/social-media-icons/ios-7-style-social-media-icons-by-design-bolts/png/256x256/Facebook.png"
+                                    height="40"
+                                    width="40"
+                                ></img>
+                            </ListGroup.Item>
+                        </ListGroup>
+                    </Card.Body>
+                </Card>
+            </div>
+        );
+    }
+
+    componentDidMount() {
+        this.setState({ someKey: 'otherValue' });
+    }
+}
+
+export default Contact;

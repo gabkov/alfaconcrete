@@ -6,12 +6,13 @@ import Banner from './components/Banner.js';
 import Mission from './components/Mission';
 import Request from './components/Request';
 import Team from './components/Team';
-
+import Contact from './components/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Implementation from './components/Implementation';
 import Particles from 'react-particles-js';
+
 
 
 const particlesOptions = {
@@ -55,6 +56,7 @@ class App extends Component {
           <Implementation />
           <Request />
           <Team />
+          <Contact/>
           <br></br>
           <br></br>
           <br></br>
