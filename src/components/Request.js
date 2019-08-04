@@ -21,7 +21,7 @@ class Request extends React.Component {
                     variant="success"
                     block
                 >
-                    Ajnánlat kérés
+                    Ajánlat kérés
         </Button>
 
                 <Card>
