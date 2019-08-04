@@ -45,9 +45,9 @@ class App extends Component {
     return (
       <div>
         <div class="particles">
-        <Particles
+        {/* <Particles
           params={particlesOptions}
-        />
+        /> */}
         </div>
         <div class="container">
           <Banner />

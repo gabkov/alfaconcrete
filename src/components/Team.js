@@ -19,8 +19,8 @@ class Team extends React.Component {
                     <Card.Body>
                         <Media>
                             <img
-                                width={500}
-                                height={300}
+                                width={300}
+                                height={200}
                                 className="mr-3"
                                 src="https://images.pexels.com/photos/1249158/pexels-photo-1249158.jpeg?cs=srgb&dl=businessmen-businesspeople-businesswomen-1249158.jpg&fm=jpg"
                                 alt="A csapat"
