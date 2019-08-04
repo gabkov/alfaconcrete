@@ -16,44 +16,44 @@ class Implementation extends React.Component {
         }
         this.PANELIMAGES =
             [{
-                src: "/images/works/panels/cement.jpg",
-                thumbnail: "/images/works/panels/cement.jpg",
+                src: "../images/works/panels/cement.jpg",
+                thumbnail: "../images/works/panels/cement.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Beton"
             },
             {
-                src: "/images/works/panels/dark.jpg",
-                thumbnail: "/images/works/panels/dark.jpg",
+                src: "./images/works/panels/dark.jpg",
+                thumbnail: "./images/works/panels/dark.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Feketés"
             },
 
             {
-                src: "/images/works/panels/norm.jpg",
-                thumbnail: "/images/works/panels/norm.jpg",
+                src: "../images/works/panels/norm.jpg",
+                thumbnail: "../images/works/panels/norm.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Stabil"
             },
             {
-                src: "/images/works/panels/pexels.jpeg",
-                thumbnail: "/images/works/panels/pexels.jpeg",
+                src: "../images/works/panels/pexels.jpeg",
+                thumbnail: "../images/works/panels/pexels.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Díszes"
             },
             {
-                src: "/images/works/panels/hard.jpeg",
-                thumbnail: "/images/works/panels/hard.jpeg",
+                src: "../images/works/panels/hard.jpeg",
+                thumbnail: "../images/works/panels/hard.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Szikla"
             },
             {
-                src: "/images/works/panels/stone.jpeg",
-                thumbnail: "/images/works/panels/stone.jpeg",
+                src: "../images/works/panels/stone.jpeg",
+                thumbnail: "../images/works/panels/stone.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Kövek"
@@ -62,8 +62,8 @@ class Implementation extends React.Component {
 
         this.TABLEIMAGES =
             [{
-                src: "/images/works/tables/coffee.jpg",
-                thumbnail: "/images/works/tables/coffee.jpg",
+                src: "../images/works/tables/coffee.jpg",
+                thumbnail: "../images/works/tables/coffee.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
