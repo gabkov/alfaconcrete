@@ -16,48 +16,69 @@ class Implementation extends React.Component {
         }
         this.PANELIMAGES =
             [{
-                src: "https://images.pexels.com/photos/1092369/pexels-photo-1092369.jpeg?cs=srgb&dl=cement-colors-concrete-1092369.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/1092369/pexels-photo-1092369.jpeg?cs=srgb&dl=cement-colors-concrete-1092369.jpg&fm=jpg",
+                src: "/images/works/panels/cement.jpg",
+                thumbnail: "/images/works/panels/cement.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Beton"
             },
             {
-                src: "https://images.pexels.com/photos/908286/pexels-photo-908286.jpeg?cs=srgb&dl=close-up-concrete-dark-908286.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/908286/pexels-photo-908286.jpeg?cs=srgb&dl=close-up-concrete-dark-908286.jpg&fm=jpg",
+                src: "/images/works/panels/dark.jpg",
+                thumbnail: "/images/works/panels/dark.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Feketés"
             },
 
             {
-                src: "https://images.pexels.com/photos/247719/pexels-photo-247719.jpeg?cs=srgb&dl=architecture-background-black-and-white-247719.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/247719/pexels-photo-247719.jpeg?cs=srgb&dl=architecture-background-black-and-white-247719.jpg&fm=jpg",
+                src: "/images/works/panels/norm.jpg",
+                thumbnail: "/images/works/panels/norm.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Stabil"
             },
+            {
+                src: "/images/works/panels/pexels.jpeg",
+                thumbnail: "/images/works/panels/pexels.jpeg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Díszes"
+            },
+            {
+                src: "/images/works/panels/hard.jpeg",
+                thumbnail: "/images/works/panels/hard.jpeg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Szikla"
+            },
+            {
+                src: "/images/works/panels/stone.jpeg",
+                thumbnail: "/images/works/panels/stone.jpeg",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+                thumbnailCaption: "Kövek"
+            }
             ]
 
         this.TABLEIMAGES =
             [{
-                src: "https://images.pexels.com/photos/1498964/pexels-photo-1498964.jpeg?cs=srgb&dl=coffee-communication-compose-1498964.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/1498964/pexels-photo-1498964.jpeg?cs=srgb&dl=coffee-communication-compose-1498964.jpg&fm=jpg",
+                src: "/images/works/tables/coffee.jpg",
+                thumbnail: "/images/works/tables/coffee.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
             {
-                src: "https://images.pexels.com/photos/2092058/pexels-photo-2092058.jpeg?cs=srgb&dl=contemporary-decoration-dining-table-2092058.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/2092058/pexels-photo-2092058.jpeg?cs=srgb&dl=contemporary-decoration-dining-table-2092058.jpg&fm=jpg",
+                src: "/images/works/tables/dining.jpg",
+                thumbnail: "/images/works/tables/dining.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
 
             {
-                src: "https://images.pexels.com/photos/2387754/pexels-photo-2387754.jpeg?cs=srgb&dl=bedside-table-book-cactus-2387754.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/2387754/pexels-photo-2387754.jpeg?cs=srgb&dl=bedside-table-book-cactus-2387754.jpg&fm=jpg",
+                src: "/images/works/tables/cactus.jpg",
+                thumbnail: "/images/works/tables/cactus.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
@@ -66,23 +87,23 @@ class Implementation extends React.Component {
 
         this.VASEIMAGES =
             [{
-                src: "https://images.pexels.com/photos/870512/flowers-vase-decor-interior-870512.jpeg?cs=srgb&dl=bloom-blossom-flora-870512.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/870512/flowers-vase-decor-interior-870512.jpeg?cs=srgb&dl=bloom-blossom-flora-870512.jpg&fm=jpg",
+                src: "/images/works/vase/bloom.jpg",
+                thumbnail: "/images/works/vase/bloom.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
             {
-                src: "https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?cs=srgb&dl=cactus-cactus-plant-contemporary-1005058.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?cs=srgb&dl=cactus-cactus-plant-contemporary-1005058.jpg&fm=jpg",
+                src: "/images/works/vase/plant.jpg",
+                thumbnail: "/images/works/vase/plant.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
 
             {
-                src: "https://images.pexels.com/photos/5939/blue-glass-flower-decoration.jpg?cs=srgb&dl=alcohol-blue-bottle-5939.jpg&fm=jpg",
-                thumbnail: "https://images.pexels.com/photos/5939/blue-glass-flower-decoration.jpg?cs=srgb&dl=alcohol-blue-bottle-5939.jpg&fm=jpg",
+                src: "/images/works/vase/bottle.jpg",
+                thumbnail: "/images/works/vase/bottle.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
@@ -114,7 +135,7 @@ class Implementation extends React.Component {
                                                     width={90}
                                                     height={90}
                                                     className="mr-3"
-                                                    src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
+                                                    src={process.env.PUBLIC_URL + '/images/categories/panel.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
                                                 />
@@ -149,7 +170,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={panelOpen} >
                                                         <div id="panel-collapse">
-                                                            <Gallery images={this.PANELIMAGES} enableImageSelection={false} />
+                                                            <Gallery images={this.PANELIMAGES} enableImageSelection={false} margin={5}/>
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -172,7 +193,7 @@ class Implementation extends React.Component {
                                                     width={90}
                                                     height={90}
                                                     className="mr-3"
-                                                    src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
+                                                    src={process.env.PUBLIC_URL + '/images/categories/table.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
                                                 />
@@ -207,7 +228,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={tableOpen} >
                                                         <div id="table-collapse">
-                                                            <Gallery images={this.TABLEIMAGES} enableImageSelection={false} />
+                                                            <Gallery images={this.TABLEIMAGES} enableImageSelection={false} margin={5} />
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -229,7 +250,7 @@ class Implementation extends React.Component {
                                                     width={90}
                                                     height={90}
                                                     className="mr-3"
-                                                    src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
+                                                    src={process.env.PUBLIC_URL + '/images/categories/vase.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
                                                 />
@@ -265,7 +286,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={vaseOpen} >
                                                         <div class="pictures" id="vase-collapse">
-                                                            <Gallery images={this.VASEIMAGES} enableImageSelection={false} />
+                                                            <Gallery images={this.VASEIMAGES} enableImageSelection={false} margin={5} />
                                                         </div>
                                                     </Collapse>
                                                 </div>
