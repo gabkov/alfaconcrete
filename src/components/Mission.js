@@ -2,9 +2,6 @@ import React from 'react';
 import { Card } from "react-bootstrap";
 
 class Mission extends React.Component {
-    constructor() {
-        super();
-    }
 
     componentDidMount() {
         this.setState({ someKey: 'otherValue' });

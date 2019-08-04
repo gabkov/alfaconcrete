@@ -3,9 +3,6 @@ import { Carousel } from 'react-bootstrap';
 
 
 class Banner extends React.Component {
-    constructor() {
-        super();
-    }
 
     render() {
         return (

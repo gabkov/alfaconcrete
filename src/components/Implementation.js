@@ -115,7 +115,7 @@ class Implementation extends React.Component {
     }
 
     render() {
-        const { panelOpen, tableOpen, vaseOpen, panelHovering, tableHovering, vaseHovering } = this.state;
+        const { panelOpen, tableOpen, vaseOpen } = this.state;
         return (
             <div class="marginbottom" data-aos="zoom-in-up" data-aos-easing="ease-in-out">
                 <Card>
