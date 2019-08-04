@@ -8,6 +8,7 @@ import Request from './components/Request';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -47,6 +48,7 @@ class App extends Component {
     return (
       <div>
         <div class="container">
+          <NavigationBar/>
           <Banner />
           <Mission />
           <Implementation />
