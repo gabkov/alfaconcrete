@@ -1,6 +1,6 @@
 import React from 'react';
 import { Media } from "react-bootstrap";
-import { Card } from "react-bootstrap";
+import { Card, CardDeck } from "react-bootstrap";
 
 class Team extends React.Component {
     constructor() {
@@ -16,26 +16,40 @@ class Team extends React.Component {
         return (
             <div class="container marginbottom" data-aos="zoom-in-up">
                 <Card>
-                    <Card.Body>
-                        <Media>
-                            <img
-                                width={300}
-                                height={200}
-                                className="mr-3"
-                                src="https://images.pexels.com/photos/1249158/pexels-photo-1249158.jpeg?cs=srgb&dl=businessmen-businesspeople-businesswomen-1249158.jpg&fm=jpg"
-                                alt="A csapat"
-                            />
-                            <Media.Body>
-                                <h5>Csapatunk</h5>
-                                <p>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                                    ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-                                    tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-                                    Donec lacinia congue felis in faucibus.
-    </p>
-                            </Media.Body>
-                        </Media>
-                    </Card.Body>
+                    <Card.Header as="h5">Csapatunk</Card.Header>
+                    <CardDeck>
+                        <Card>
+                            <Card.Img variant="top" src="https://www.ludoviccareme.com/files/image_211_image_fr.jpg" />
+                            <Card.Body>
+                                <Card.Title>Török Ádám</Card.Title>
+                                <Card.Text>
+                                    Kis jellemzés magamtokról, par szóban.
+      </Card.Text>
+                            </Card.Body>
+
+                        </Card>
+                        <Card>
+                            <Card.Img variant="top" src="https://thisisedm.it/wp-content/uploads/2014/12/Richie-Hawtin.jpg" />
+                            <Card.Body>
+                                <Card.Title>Pádár Márton</Card.Title>
+                                <Card.Text>
+                                    Kis jellemzés magamtokról, par szóban. De lehet több is a doboz dinamikusan változik és
+                                    ahhoz igazítja a méretet.
+                                </Card.Text>
+                            </Card.Body>
+
+                        </Card>
+                        <Card>
+                            <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/56ccb96b1bbee0cce90d1ab9/1559924330657-SZNOJGYTTL91CXFOIY8I/ke17ZwdGBToddI8pDm48kHldqyjDwaeS7kYSmaCmglZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmTl_ALRZE0UkEheIF40jl8l-p-UjEfP0lrs6khMOijucIE9LbemCnC0mKIu4O-BCA/jonas_portraits023.jpg?format=500w" />
+                            <Card.Body>
+                                <Card.Title>Card title</Card.Title>
+                                <Card.Text>
+                                    Kis jellemzés magamtokról, par szóban.
+      </Card.Text>
+                            </Card.Body>
+
+                        </Card>
+                    </CardDeck>
                 </Card>
             </div>
         );

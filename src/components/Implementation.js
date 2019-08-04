@@ -108,7 +108,7 @@ class Implementation extends React.Component {
                                     <div class="works">
 
                                         <Media as="li">
-                                            <MDBView hover zoom>
+                                            <div class="img-hover-zoom">
                                                 <img
                                                     onClick={() => this.setState({ panelOpen: !panelOpen })}
                                                     aria-controls="panel-collapse"
@@ -119,7 +119,7 @@ class Implementation extends React.Component {
                                                     src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
                                                     alt="Generic placeholder"
                                                 />
-                                            </MDBView>
+                                            </div>
                                             <Media.Body>
                                                 <h5>3D Panelek</h5>
                                                 <p>
@@ -146,7 +146,7 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <MDBView hover zoom>
+                                            <div class="img-hover-zoom">
                                                 <img
                                                     onClick={() => this.setState({ tableOpen: !tableOpen })}
                                                     aria-controls="table-collapse"
@@ -157,7 +157,7 @@ class Implementation extends React.Component {
                                                     src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
                                                     alt="Generic placeholder"
                                                 />
-                                            </MDBView>
+                                            </div>
                                             <Media.Body>
                                                 <h5>Asztalok</h5>
                                                 <p>
@@ -183,7 +183,7 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <MDBView hover zoom>
+                                            <div class="img-hover-zoom">
                                                 <img
                                                     onClick={() => this.setState({ vaseOpen: !vaseOpen })}
                                                     aria-controls="vase-collapse"
@@ -194,7 +194,7 @@ class Implementation extends React.Component {
                                                     src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
                                                     alt="Generic placeholder"
                                                 />
-                                            </MDBView>
+                                            </div>
                                             <Media.Body>
                                                 <h5>Vázák, szobrok</h5>
                                                 <p>

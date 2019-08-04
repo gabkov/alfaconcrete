@@ -39,3 +39,12 @@ body {
   right: 0;
   bottom:0;
 }
+
+
+.img-hover-zoom { 
+  transition: all .2s ease-in-out; 
+}
+
+.img-hover-zoom:hover { 
+  transform: scale(1.1); 
+}
