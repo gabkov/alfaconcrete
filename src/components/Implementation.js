@@ -1,19 +1,8 @@
 import React from 'react';
 import { Media, Card, Button, Collapse } from "react-bootstrap";
 import Gallery from 'react-grid-gallery';
-import posed from "react-pose";
-import styled from "styled-components";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-
-const Container = styled.div``;
-
-const Square = posed.div({
-    idle: { scale: 1 },
-    hovered: { scale: 1.2 }
-});
-
-const StyledSquare = styled(Square)``;
 
 class Implementation extends React.Component {
     constructor() {
@@ -120,16 +109,16 @@ class Implementation extends React.Component {
 
                                         <Media as="li">
                                             <MDBView hover zoom>
-                                                    <img
-                                                onClick={() => this.setState({ panelOpen: !panelOpen })}
-                                                aria-controls="panel-collapse"
-                                                aria-expanded={panelOpen}
-                                                width={90}
-                                                height={90}
-                                                className="mr-3"
-                                                src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
-                                                alt="Generic placeholder"
-                                            />
+                                                <img
+                                                    onClick={() => this.setState({ panelOpen: !panelOpen })}
+                                                    aria-controls="panel-collapse"
+                                                    aria-expanded={panelOpen}
+                                                    width={90}
+                                                    height={90}
+                                                    className="mr-3"
+                                                    src="https://images.pexels.com/photos/236734/pexels-photo-236734.jpeg?cs=srgb&dl=architecture-art-background-236734.jpg&fm=jpg"
+                                                    alt="Generic placeholder"
+                                                />
                                             </MDBView>
                                             <Media.Body>
                                                 <h5>3D Panelek</h5>
@@ -157,23 +146,18 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <Container>
-                                                <StyledSquare
-                                                    pose={this.state.tableHovering ? "hovered" : "idle"}
-                                                    onMouseEnter={() => this.setState({ tableHovering: true })}
-                                                    onMouseLeave={() => this.setState({ tableHovering: false })}>
-                                                    <img
-                                                        onClick={() => this.setState({ tableOpen: !tableOpen })}
-                                                        aria-controls="table-collapse"
-                                                        aria-expanded={tableOpen}
-                                                        width={90}
-                                                        height={90}
-                                                        className="mr-3"
-                                                        src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
-                                                        alt="Generic placeholder"
-                                                    />
-                                                </StyledSquare>
-                                            </Container>
+                                            <MDBView hover zoom>
+                                                <img
+                                                    onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                    aria-controls="table-collapse"
+                                                    aria-expanded={tableOpen}
+                                                    width={90}
+                                                    height={90}
+                                                    className="mr-3"
+                                                    src="https://images.pexels.com/photos/2376971/pexels-photo-2376971.jpeg?cs=srgb&dl=ashtray-chair-dining-room-2376971.jpg&fm=jpg"
+                                                    alt="Generic placeholder"
+                                                />
+                                            </MDBView>
                                             <Media.Body>
                                                 <h5>Asztalok</h5>
                                                 <p>
@@ -199,23 +183,18 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <Container>
-                                                <StyledSquare
-                                                    pose={this.state.vaseHovering ? "hovered" : "idle"}
-                                                    onMouseEnter={() => this.setState({ vaseHovering: true })}
-                                                    onMouseLeave={() => this.setState({ vaseHovering: false })}>
-                                                    <img
-                                                        onClick={() => this.setState({ vaseOpen: !vaseOpen })}
-                                                        aria-controls="vase-collapse"
-                                                        aria-expanded={vaseOpen}
-                                                        width={90}
-                                                        height={90}
-                                                        className="mr-3"
-                                                        src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
-                                                        alt="Generic placeholder"
-                                                    />
-                                                </StyledSquare>
-                                            </Container>
+                                            <MDBView hover zoom>
+                                                <img
+                                                    onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                    aria-controls="vase-collapse"
+                                                    aria-expanded={vaseOpen}
+                                                    width={90}
+                                                    height={90}
+                                                    className="mr-3"
+                                                    src="https://images.pexels.com/photos/220987/pexels-photo-220987.jpeg?cs=srgb&dl=bright-calm-ceiling-220987.jpg&fm=jpg"
+                                                    alt="Generic placeholder"
+                                                />
+                                            </MDBView>
                                             <Media.Body>
                                                 <h5>Vázák, szobrok</h5>
                                                 <p>
