@@ -123,13 +123,21 @@ class Implementation extends React.Component {
                                                 <div class="d-flex">
                                                     <h5 class="mr-auto p-2">3D Panelek</h5>
                                                     {!panelOpen ?
-                                                        <i class="glyphicon glyphicon-chevron-down p-2"
+                                                        <img
+                                                            class="arrow" 
+                                                            src="http://www.myiconfinder.com/uploads/iconsets/256-256-1383000fade3dbdf3e93972212606011-Arrow.png"
+                                                            width="15"
+                                                            height="15"
                                                             onClick={() => this.setState({ panelOpen: !panelOpen })}
-                                                        ></i>
+                                                        />
                                                         :
-                                                        <i class="glyphicon glyphicon-chevron-up p-2"
+                                                        <img
+                                                            class="arrow"
+                                                            src="http://www.myiconfinder.com/uploads/iconsets/256-256-d52f5aa54a97cc505f266d8ac43ca421-Arrow.png"
+                                                            width="15"
+                                                            height="15"
                                                             onClick={() => this.setState({ panelOpen: !panelOpen })}
-                                                        ></i>
+                                                        />
                                                     }
                                                 </div>
                                                 <p>
@@ -173,13 +181,21 @@ class Implementation extends React.Component {
                                                 <div class="d-flex">
                                                     <h5 class="mr-auto p-2">Asztalok</h5>
                                                     {!tableOpen ?
-                                                        <i class="glyphicon glyphicon-chevron-down p-2"
-                                                            onClick={() => this.setState({ tableOpen: !tableOpen })}
-                                                        ></i>
-                                                        :
-                                                        <i class="glyphicon glyphicon-chevron-up p-2"
-                                                            onClick={() => this.setState({ tableOpen: !tableOpen })}
-                                                        ></i>
+                                                       <img
+                                                       class="arrow" 
+                                                       src="http://www.myiconfinder.com/uploads/iconsets/256-256-1383000fade3dbdf3e93972212606011-Arrow.png"
+                                                       width="15"
+                                                       height="15"
+                                                       onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                   />
+                                                   :
+                                                   <img
+                                                       class="arrow"
+                                                       src="http://www.myiconfinder.com/uploads/iconsets/256-256-d52f5aa54a97cc505f266d8ac43ca421-Arrow.png"
+                                                       width="15"
+                                                       height="15"
+                                                       onClick={() => this.setState({ tableOpen: !tableOpen })}
+                                                   />
                                                     }
                                                 </div>
                                                 <p>
@@ -222,13 +238,21 @@ class Implementation extends React.Component {
                                                 <div class="d-flex">
                                                     <h5 class="mr-auto p-2">Vázák, szobrok</h5>
                                                     {!vaseOpen ?
-                                                        <i class="glyphicon glyphicon-chevron-down p-2"
-                                                            onClick={() => this.setState({ vaseOpen: !vaseOpen })}
-                                                        ></i>
-                                                        :
-                                                        <i class="glyphicon glyphicon-chevron-up p-2"
-                                                            onClick={() => this.setState({ vaseOpen: !vaseOpen })}
-                                                        ></i>
+                                                        <img
+                                                        class="arrow" 
+                                                        src="http://www.myiconfinder.com/uploads/iconsets/256-256-1383000fade3dbdf3e93972212606011-Arrow.png"
+                                                        width="15"
+                                                        height="15"
+                                                        onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                    />
+                                                    :
+                                                    <img
+                                                        class="arrow"
+                                                        src="http://www.myiconfinder.com/uploads/iconsets/256-256-d52f5aa54a97cc505f266d8ac43ca421-Arrow.png"
+                                                        width="15"
+                                                        height="15"
+                                                        onClick={() => this.setState({ vaseOpen: !vaseOpen })}
+                                                    />
                                                     }
 
                                                 </div>
