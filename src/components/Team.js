@@ -14,7 +14,7 @@ class Team extends React.Component {
 
     render() {
         return (
-            <div class="container marginbottom" data-aos="zoom-in-up">
+            <div class="marginbottom" data-aos="zoom-in-up">
                 <Card>
                     <Card.Header as="h5">Csapatunk</Card.Header>
                     <Card.Body>
