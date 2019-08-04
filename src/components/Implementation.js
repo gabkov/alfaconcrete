@@ -1,7 +1,6 @@
 import React from 'react';
 import { Media, Card, Button, Collapse } from "react-bootstrap";
 import Gallery from 'react-grid-gallery';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 
 class Implementation extends React.Component {
