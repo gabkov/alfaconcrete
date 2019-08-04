@@ -16,23 +16,23 @@ class Implementation extends React.Component {
         }
         this.PANELIMAGES =
             [{
-                src: "../images/works/panels/cement.jpg",
-                thumbnail: "../images/works/panels/cement.jpg",
+                src: "../images/works/panels/cement.JPG",
+                thumbnail: "../images/works/panels/cement.JPG",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Beton"
             },
             {
-                src: "./images/works/panels/dark.jpg",
-                thumbnail: "./images/works/panels/dark.jpg",
+                src: "./images/works/panels/dark.JPG",
+                thumbnail: "./images/works/panels/dark.JPG",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Feketés"
             },
 
             {
-                src: "../images/works/panels/norm.jpg",
-                thumbnail: "../images/works/panels/norm.jpg",
+                src: "./images/works/panels/norm.jpg",
+                thumbnail: "./images/works/panels/norm.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Stabil"
