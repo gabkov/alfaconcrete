@@ -40,6 +40,9 @@ body {
   bottom:0;
 }
 
+.team-card{
+  padding: 20px;
+}
 
 .img-hover-zoom { 
   transition: all .2s ease-in-out; 
