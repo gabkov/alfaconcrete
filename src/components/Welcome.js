@@ -8,11 +8,10 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            <div class="elementToFadeInAndOut">
                 <img
+                class="elementToFadeInAndOut"
                     src={process.env.PUBLIC_URL + '/images/navbar/diamondlogo.png'}
                 />
-            </div>
         );
     }
 
