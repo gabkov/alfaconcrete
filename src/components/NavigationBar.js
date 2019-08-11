@@ -5,7 +5,7 @@ class NavigationBar extends React.Component {
 
     render() {
         return (
-            <Navbar sticky="top" bg="light" expand="md">
+            <Navbar data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" sticky="top" bg="light" expand="lg" collapseOnSelect="true">
                 <Navbar.Brand ><img
                     src={process.env.PUBLIC_URL + '/images/navbar/diamondlogo.png'} 
                     width="30"
