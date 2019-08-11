@@ -6,7 +6,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <Navbar sticky="top" bg="light" expand="md">
-                <Navbar.Brand href="#home"><img
+                <Navbar.Brand ><img
                     src={process.env.PUBLIC_URL + '/images/navbar/diamondlogo.png'} 
                     width="30"
                     height="30"
@@ -15,15 +15,15 @@ class NavigationBar extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Küldetésünk</Nav.Link>
+                        <Nav.Link >Küldetésünk</Nav.Link>
                         <NavDropdown title="Munkáink" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">3D Panelek</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Asztalok</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Vázák, szobrok</NavDropdown.Item>
+                            <NavDropdown.Item >3D Panelek</NavDropdown.Item>
+                            <NavDropdown.Item >Asztalok</NavDropdown.Item>
+                            <NavDropdown.Item >Vázák, szobrok</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#link">Ajánlat kérés</Nav.Link>
-                        <Nav.Link href="#link">Csapatunk</Nav.Link>
-                        <Nav.Link href="#link">Kapcsolat</Nav.Link>
+                        <Nav.Link >Ajánlat kérés</Nav.Link>
+                        <Nav.Link >Csapatunk</Nav.Link>
+                        <Nav.Link >Kapcsolat</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
