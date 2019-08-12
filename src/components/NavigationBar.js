@@ -17,7 +17,7 @@ class NavigationBar extends React.Component {
 
     setNavExpanded = (expanded) => {
         this.setState({ navExpanded: expanded });
-      }
+    }
 
     closeNav = () => {
         this.setState({ navExpanded: false });
@@ -38,16 +38,16 @@ class NavigationBar extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav
-                        onSelect={this.closeNav}
                         className="mr-auto">
                         <Nav.Link
                         >
                             <Link
+                                onClick={this.closeNav}
                                 activeClass="active"
                                 to="mission"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-250}
                                 duration={500}
                             >
                                 Küldetésünk
@@ -57,11 +57,12 @@ class NavigationBar extends React.Component {
 
                         <Nav.Link>
                             <Link
+                                onClick={this.closeNav}
                                 activeClass="active"
                                 to="implementation"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-150}
                                 duration={500}
                             >
                                 Munkáink
@@ -76,11 +77,12 @@ class NavigationBar extends React.Component {
                         </NavDropdown> */}
                         <Nav.Link>
                             <Link
+                                onClick={this.closeNav}
                                 activeClass="active"
                                 to="request"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-300}
                                 duration={500}
                             >
                                 Ajánlat kérés
@@ -88,22 +90,24 @@ class NavigationBar extends React.Component {
                         </Nav.Link>
                         <Nav.Link>
                             <Link
+                                onClick={this.closeNav}
                                 activeClass="active"
                                 to="team"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-250}
                                 duration={500}>
                                 Csapatunk
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
                             <Link
+                                onClick={this.closeNav}
                                 activeClass="active"
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-300}
                                 duration={500}
                             >
                                 Kapcsolat
