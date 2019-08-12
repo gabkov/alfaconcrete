@@ -169,6 +169,7 @@ class Implementation extends React.Component {
       </p>
                                                 <div class="pictures">
                                                     <Collapse in={panelOpen} >
+                                                        
                                                         <div id="panel-collapse">
                                                             <Gallery images={this.PANELIMAGES} enableImageSelection={false} margin={5}/>
                                                         </div>
