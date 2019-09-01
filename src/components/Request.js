@@ -28,7 +28,7 @@ class Request extends React.Component {
                     <Collapse in={this.state.open}>
                         <Card.Body>
                             <div id="example-collapse-text">
-                                <Form action="https://formspree.io/csigabiga95@gmail.com" method="POST">
+                                <Form action="https://formspree.io/reliefworld2019@gmail.com" method="POST">
                                     <Form.Group controlId="formBasicEmail">
                                         <Form.Label>Email cím</Form.Label>
                                         <Form.Control type="email" name="email" placeholder="Add meg e-mail címed" />
