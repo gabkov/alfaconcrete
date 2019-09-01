@@ -126,3 +126,7 @@
 		opacity: 1;
 	}
 }
+
+#gotcha{
+  display: none;
+}

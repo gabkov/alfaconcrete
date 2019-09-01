@@ -28,15 +28,16 @@ class Request extends React.Component {
                     <Collapse in={this.state.open}>
                         <Card.Body>
                             <div id="example-collapse-text">
-                                <Form>
+                                <Form action="https://formspree.io/csigabiga95@gmail.com" method="POST">
                                     <Form.Group controlId="formBasicEmail">
                                         <Form.Label>Email cím</Form.Label>
-                                        <Form.Control type="email" placeholder="Add meg e-mail címed" />
+                                        <Form.Control type="email" name="email" placeholder="Add meg e-mail címed" />
                                     </Form.Group>
 
                                     <Form.Group controlId="formBasicPassword">
                                         <Form.Label>Üzenet</Form.Label>
-                                        <Form.Control as="textarea" placeholder="Üzenet" rows="3" />
+                                        <Form.Control as="textarea" name="message" placeholder="Üzenet" rows="3" />
+                                        <Form.Control type="text" name="_gotcha" id="gotcha" />
                                     </Form.Group>
                                     <Button variant="success" type="submit">
                                         Küldés
