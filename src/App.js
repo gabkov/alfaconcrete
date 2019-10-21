@@ -4,19 +4,37 @@ import "./decalare_modules.d.ts";
 
 import Banner from './components/Banner.js';
 import Mission from './components/Mission';
+import Request from './components/Request';
+import Team from './components/Team';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
+import Welcome from './components/Welcome';
 
-import "react-bootstrap"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Implementation from './components/Implementation';
-import Gallery from 'react-grid-gallery';
+import Particles from 'react-particles-js';
+import { Element } from "react-scroll";
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const particlesOptions = {
+  "particles": {
+    "line_linked": {
+      "color": "#000000"
+    },
+    "density_auto": true,
+    "number": {
+      "value": 500
+    },
+    "size": {
+      "value": 5
+    }
   }
 
+};
+
+class App extends Component {
   componentDidMount() {
     AOS.init({
       duration: 2000
@@ -25,15 +43,29 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
-        <Banner />
-        <Mission />
-        <Implementation/>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+      <div>
+        <Welcome />
+        <div class="container body-content">
+          <NavigationBar />
+          <Banner />
+          <Element name="mission">
+            <Mission />
+          </Element>
+          <Element name="implementation">
+            <Implementation />
+            </Element>
+          <Element name="request">
+            <Request />
+          </Element>
+          <Element name="team">
+            <Team />
+          </Element>
+          <Element name="contact" >
+            <Contact />
+          </Element>
+          <Footer />
+
+        </div>
       </div>
     )
   }
