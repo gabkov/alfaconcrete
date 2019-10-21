@@ -16,44 +16,44 @@ class Implementation extends React.Component {
         }
         this.PANELIMAGES =
             [{
-                src: "./images/works/panels/cement.JPG",
-                thumbnail: "./images/works/panels/cement.JPG",
+                src: "./images/works/panels/cement.jpg",
+                thumbnail: "./images/works/panels/cement.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Beton"
             },
             {
-                src: "./images/works/panels/dark.JPG",
-                thumbnail: "./images/works/panels/dark.JPG",
+                src: "./images/works/panels/dark.jpg",
+                thumbnail: "./images/works/panels/dark.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Feketés"
             },
 
             {
-                src: "./images/works/panels/norm.JPG",
-                thumbnail: "./images/works/panels/norm.JPG",
+                src: "./images/works/panels/norm.jpg",
+                thumbnail: "./images/works/panels/norm.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Stabil"
             },
             {
-                src: "./images/works/panels/pexels.JPEG",
-                thumbnail: "./images/works/panels/pexels.JPEG",
+                src: "./images/works/panels/pexels.jpeg",
+                thumbnail: "./images/works/panels/pexels.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Díszes"
             },
             {
-                src: "./images/works/panels/hard.JPEG",
-                thumbnail: "./images/works/panels/hard.JPEG",
+                src: "./images/works/panels/hard.jpeg",
+                thumbnail: "./images/works/panels/hard.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Szikla"
             },
             {
-                src: "./images/works/panels/stone.JPEG",
-                thumbnail: "./images/works/panels/stone.JPEG",
+                src: "./images/works/panels/stone.jpeg",
+                thumbnail: "./images/works/panels/stone.jpeg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Kövek"
@@ -62,23 +62,23 @@ class Implementation extends React.Component {
 
         this.TABLEIMAGES =
             [{
-                src: "./images/works/tables/coffee.JPG",
-                thumbnail: "./images/works/tables/coffee.JPG",
+                src: "./images/works/tables/coffee.jpg",
+                thumbnail: "./images/works/tables/coffee.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
             {
-                src: "./images/works/tables/dining.JPG",
-                thumbnail: "./images/works/tables/dining.JPG",
+                src: "./images/works/tables/dining.jpg",
+                thumbnail: "./images/works/tables/dining.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
 
             {
-                src: "./images/works/tables/cactus.JPG",
-                thumbnail: "./images/works/tables/cactus.JPG",
+                src: "./images/works/tables/cactus.jpg",
+                thumbnail: "./images/works/tables/cactus.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
@@ -87,23 +87,23 @@ class Implementation extends React.Component {
 
         this.VASEIMAGES =
             [{
-                src: "./images/works/vase/bloom.JPG",
-                thumbnail: "./images/works/vase/bloom.JPG",
+                src: "./images/works/vase/bloom.jpg",
+                thumbnail: "./images/works/vase/bloom.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
             {
-                src: "./images/works/vase/plant.JPG",
-                thumbnail: "./images/works/vase/plant.JPG",
+                src: "./images/works/vase/plant.jpg",
+                thumbnail: "./images/works/vase/plant.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
             },
 
             {
-                src: "./images/works/vase/bottle.JPG",
-                thumbnail: "./images/works/vase/bottle.JPG",
+                src: "./images/works/vase/bottle.jpg",
+                thumbnail: "./images/works/vase/bottle.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212,
                 thumbnailCaption: "Levél"
