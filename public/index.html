@@ -29,7 +29,31 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDzNLyIKogonmdjTkD8gLPF7UOWn8ztHbc",
+      authDomain: "alfaconcrete-93dcf.firebaseapp.com",
+      databaseURL: "https://alfaconcrete-93dcf.firebaseio.com",
+      projectId: "alfaconcrete-93dcf",
+      storageBucket: "alfaconcrete-93dcf.appspot.com",
+      messagingSenderId: "517193150848",
+      appId: "1:517193150848:web:7d11411c10a2d865021165",
+      measurementId: "G-2M85PEEB36"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
