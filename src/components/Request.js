@@ -31,13 +31,16 @@ class Request extends React.Component {
                                 <Form action="https://formspree.io/info@aranylovas.hu" method="POST">
                                     <Form.Group controlId="formBasicEmail">
                                         <Form.Label>Email cím</Form.Label>
-                                        <Form.Control type="email" name="email" placeholder="Add meg e-mail címed" />
+                                        <Form.Control type="email" name="email" placeholder="Add meg e-mail címed"  required/>
                                     </Form.Group>
 
                                     <Form.Group controlId="formBasicPassword">
                                         <Form.Label>Üzenet</Form.Label>
                                         <Form.Control as="textarea" name="message" placeholder="Üzenet" rows="3" />
                                         <Form.Control type="text" name="_gotcha" id="gotcha" />
+                                    </Form.Group>
+                                    <Form.Group controlId="formBasicCheckbox">
+                                        <Form.Check type="checkbox" label=" Elfogadom az adatvédelmi tájékoztatóba foglaltakat." feedback="Küldéshez el kell fogadnod az adatvédelmi tájékoztatót." required/>
                                     </Form.Group>
                                     <Button variant="success" type="submit">
                                         Küldés
