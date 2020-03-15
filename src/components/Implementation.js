@@ -28,7 +28,7 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="img-hover-zoom">
+                                            <div class="pulsing">
                                                 <Image
                                                     onClick={() => this.setState({ panelOpen: !panelOpen })}
                                                     aria-controls="panel-collapse"
@@ -86,7 +86,7 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="img-hover-zoom">
+                                            <div class="pulsing">
                                                 <Image
                                                     onClick={() => this.setState({ tableOpen: !tableOpen })}
                                                     aria-controls="table-collapse"
@@ -143,7 +143,7 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="img-hover-zoom">
+                                            <div class="pulsing">
                                                 <Image
                                                     onClick={() => this.setState({ vaseOpen: !vaseOpen })}
                                                     aria-controls="vase-collapse"

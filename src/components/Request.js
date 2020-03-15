@@ -40,7 +40,7 @@ class Request extends React.Component {
                                         <Form.Control type="text" name="_gotcha" id="gotcha" />
                                     </Form.Group>
                                     <Form.Group controlId="formBasicCheckbox">
-                                        <Form.Check required type="checkbox" label="Elfogadom az adatvédelmi tájékoztatóba foglaltakat." feedback="Küldéshez el kell fogadnod az adatvédelmi tájékoztatót."/>
+                                        <Form.Check required type="checkbox" label=" Elfogadom az adatvédelmi tájékoztatóba foglaltakat." feedback="Küldéshez el kell fogadnod az adatvédelmi tájékoztatót."/>
                                     </Form.Group>
                                     <Button variant="success" type="submit">
                                         Küldés
