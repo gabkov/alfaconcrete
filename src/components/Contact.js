@@ -14,19 +14,23 @@ class Contact extends React.Component {
                     <Card.Header>Kapcsolat</Card.Header>
                     <Card.Body>
                         <ListGroup variant="flush">
-                            <ListGroup.Item>Tel.szám: +36 30 69 69 696</ListGroup.Item>
-                            <ListGroup.Item>3200 Gyöngyös Bármilyen utca 10.</ListGroup.Item>
+                            <ListGroup.Item>Tel.szám: +36 20 422 0764</ListGroup.Item>
+                            <ListGroup.Item>3200, Gyöngyös Zöldhíd utca 5. 2/1</ListGroup.Item>
                             <ListGroup.Item>
+                                <a target="_blank" href="https://www.instagram.com/aranylo_vas/">
                                 <img class="socialicon img-hover-zoom" src="http://monarchiaoperett.hu/images/instagram-2-icon-256.png"
                                     height="40"
                                     width="40"
                                     alt="insta"
                                 ></img>
+                                </a>
+                                <a target="_blank" href="https://www.facebook.com/Aranyl%C3%B3-vas-104278354521849/">
                                 <img class="socialicon img-hover-zoom" src="https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png"
                                     height="40"
                                     width="40"
                                     alt="face"
                                 ></img>
+                                </a>
                             </ListGroup.Item>
                         </ListGroup>
                     </Card.Body>

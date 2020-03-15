@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <div>
                 <footer class="footer mt-auto py-3">
                     <div class="foter-text">
-                        <span class="text-muted">@Alfaconcrete 2019 Minden jog fenntartva</span>
+                        <span class="text-muted">@Aranyló Vas 2019 Minden jog fenntartva</span>
                     </div>
                 </footer>
             </div>

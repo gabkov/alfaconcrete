@@ -39,6 +39,9 @@ class Request extends React.Component {
                                         <Form.Control as="textarea" name="message" placeholder="Üzenet" rows="3" />
                                         <Form.Control type="text" name="_gotcha" id="gotcha" />
                                     </Form.Group>
+                                    <Form.Group controlId="formBasicCheckbox">
+                                        <Form.Check required type="checkbox" label="Elfogadom az adatvédelmi tájékoztatóba foglaltakat." feedback="Küldéshez el kell fogadnod az adatvédelmi tájékoztatót."/>
+                                    </Form.Group>
                                     <Button variant="success" type="submit">
                                         Küldés
   </Button>
