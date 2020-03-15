@@ -14,25 +14,8 @@ import Welcome from './components/Welcome';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Implementation from './components/Implementation';
-import Particles from 'react-particles-js';
 import { Element } from "react-scroll";
 
-
-const particlesOptions = {
-  "particles": {
-    "line_linked": {
-      "color": "#000000"
-    },
-    "density_auto": true,
-    "number": {
-      "value": 500
-    },
-    "size": {
-      "value": 5
-    }
-  }
-
-};
 
 class App extends Component {
   componentDidMount() {

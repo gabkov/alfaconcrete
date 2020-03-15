@@ -20,10 +20,12 @@ class Contact extends React.Component {
                                 <img class="socialicon img-hover-zoom" src="http://monarchiaoperett.hu/images/instagram-2-icon-256.png"
                                     height="40"
                                     width="40"
+                                    alt="insta"
                                 ></img>
-                                <img class="socialicon img-hover-zoom" src="http://files.softicons.com/download/social-media-icons/ios-7-style-social-media-icons-by-design-bolts/png/256x256/Facebook.png"
+                                <img class="socialicon img-hover-zoom" src="https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-3.png"
                                     height="40"
                                     width="40"
+                                    alt="face"
                                 ></img>
                             </ListGroup.Item>
                         </ListGroup>
