@@ -1,6 +1,5 @@
 import React from 'react';
-import { Media, Card, Button, Collapse, Image } from "react-bootstrap";
-import Gallery from 'react-grid-gallery';
+import { Media, Card, Collapse, Image } from "react-bootstrap";
 
 
 class Implementation extends React.Component {
@@ -14,104 +13,6 @@ class Implementation extends React.Component {
             tableHovering: false,
             vaseHovering: false
         }
-        this.PANELIMAGES =
-            [{
-                src: "./images/works/panels/cement.JPG",
-                thumbnail: "./images/works/panels/cement.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Beton"
-            },
-            {
-                src: "./images/works/panels/dark.JPG",
-                thumbnail: "./images/works/panels/dark.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Feketés"
-            },
-
-            {
-                src: "./images/works/panels/norm.JPG",
-                thumbnail: "./images/works/panels/norm.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Stabil"
-            },
-            {
-                src: "./images/works/panels/pexels.JPEG",
-                thumbnail: "./images/works/panels/pexels.JPEG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Díszes"
-            },
-            {
-                src: "./images/works/panels/hard.JPEG",
-                thumbnail: "./images/works/panels/hard.JPEG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Szikla"
-            },
-            {
-                src: "./images/works/panels/stone.JPEG",
-                thumbnail: "./images/works/panels/stone.JPEG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Kövek"
-            }
-            ]
-
-        this.TABLEIMAGES =
-            [{
-                src: "./images/works/tables/coffee.JPG",
-                thumbnail: "./images/works/tables/coffee.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-            {
-                src: "./images/works/tables/dining.JPG",
-                thumbnail: "./images/works/tables/dining.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-
-            {
-                src: "./images/works/tables/cactus.JPG",
-                thumbnail: "./images/works/tables/cactus.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-            ]
-
-        this.VASEIMAGES =
-            [{
-                src: "./images/works/vase/bloom.JPG",
-                thumbnail: "./images/works/vase/bloom.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-            {
-                src: "./images/works/vase/plant.JPG",
-                thumbnail: "./images/works/vase/plant.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-
-            {
-                src: "./images/works/vase/bottle.JPG",
-                thumbnail: "./images/works/vase/bottle.JPG",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                thumbnailCaption: "Levél"
-            },
-            ]
-    }
-
-    componentDidMount() {
     }
 
     render() {
@@ -169,9 +70,8 @@ class Implementation extends React.Component {
       </p>
                                                 <div class="pictures">
                                                     <Collapse in={panelOpen} >
-                                                        
                                                         <div id="panel-collapse">
-                                                            <Gallery images={this.PANELIMAGES} enableImageSelection={false} margin={5}/>
+                                                        <iframe title="panels" src="https://drive.google.com/embeddedfolderview?id=1DaNo55AQn7hiiHuyd-jDvEQCjKfWiOnv#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -229,7 +129,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={tableOpen} >
                                                         <div id="table-collapse">
-                                                            <Gallery images={this.TABLEIMAGES} enableImageSelection={false} margin={5} />
+                                                        <iframe title="tables" src="https://drive.google.com/embeddedfolderview?id=1o-1L6CYIx6848Adt8NUpNX6wSwVBRTBk#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -287,7 +187,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={vaseOpen} >
                                                         <div class="pictures" id="vase-collapse">
-                                                            <Gallery images={this.VASEIMAGES} enableImageSelection={false} margin={5} />
+                                                        <iframe title="vases" src="https://drive.google.com/embeddedfolderview?id=1B2T3Jv-aJ0oHxAkk7b8uFJtldpvPKN4o#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavDropdown, Button, Nav, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class NavigationBar extends React.Component {
@@ -34,6 +34,7 @@ class NavigationBar extends React.Component {
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
+                    alt="logo"
                 /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

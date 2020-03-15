@@ -1,16 +1,8 @@
 import React from 'react';
-import { Media } from "react-bootstrap";
 import { Card, CardDeck } from "react-bootstrap";
 
 class Team extends React.Component {
-    constructor() {
-        super();
 
-    }
-
-    componentDidMount() {
-
-    }
 
     render() {
         return (
