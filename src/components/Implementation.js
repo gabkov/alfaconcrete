@@ -1,6 +1,5 @@
 import React from 'react';
-import { Media, Card, Button, Collapse, Image } from "react-bootstrap";
-import Gallery from 'react-grid-gallery';
+import { Media, Card, Collapse, Image } from "react-bootstrap";
 
 
 class Implementation extends React.Component {
@@ -72,7 +71,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={panelOpen} >
                                                         <div id="panel-collapse">
-                                                        <iframe src="https://drive.google.com/embeddedfolderview?id=1DaNo55AQn7hiiHuyd-jDvEQCjKfWiOnv#grid" class="drive_galery" ></iframe>
+                                                        <iframe title="panels" src="https://drive.google.com/embeddedfolderview?id=1DaNo55AQn7hiiHuyd-jDvEQCjKfWiOnv#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -130,7 +129,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={tableOpen} >
                                                         <div id="table-collapse">
-                                                        <iframe src="https://drive.google.com/embeddedfolderview?id=1o-1L6CYIx6848Adt8NUpNX6wSwVBRTBk#grid" class="drive_galery" ></iframe>
+                                                        <iframe title="tables" src="https://drive.google.com/embeddedfolderview?id=1o-1L6CYIx6848Adt8NUpNX6wSwVBRTBk#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>
@@ -188,7 +187,7 @@ class Implementation extends React.Component {
                                                 <div class="pictures">
                                                     <Collapse in={vaseOpen} >
                                                         <div class="pictures" id="vase-collapse">
-                                                        <iframe src="https://drive.google.com/embeddedfolderview?id=1B2T3Jv-aJ0oHxAkk7b8uFJtldpvPKN4o#grid" class="drive_galery" ></iframe>
+                                                        <iframe title="vases" src="https://drive.google.com/embeddedfolderview?id=1B2T3Jv-aJ0oHxAkk7b8uFJtldpvPKN4o#grid" class="drive_galery" ></iframe>
                                                         </div>
                                                     </Collapse>
                                                 </div>
