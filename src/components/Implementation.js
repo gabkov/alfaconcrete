@@ -28,14 +28,14 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="pulsing">
+                                            <div>
                                                 <Image
                                                     onClick={() => this.setState({ panelOpen: !panelOpen })}
                                                     aria-controls="panel-collapse"
                                                     aria-expanded={panelOpen}
                                                     width={90}
                                                     height={90}
-                                                    className="mr-3"
+                                                    className="mr-3 pulsing"
                                                     src={process.env.PUBLIC_URL + '/images/categories/panel.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
@@ -86,14 +86,14 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="pulsing">
+                                            <div >
                                                 <Image
                                                     onClick={() => this.setState({ tableOpen: !tableOpen })}
                                                     aria-controls="table-collapse"
                                                     aria-expanded={tableOpen}
                                                     width={90}
                                                     height={90}
-                                                    className="mr-3"
+                                                    className="mr-3 pulsing"
                                                     src={process.env.PUBLIC_URL + '/images/categories/table.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
@@ -143,14 +143,14 @@ class Implementation extends React.Component {
                                 <Card.Body>
                                     <div class="works">
                                         <Media as="li">
-                                            <div class="pulsing">
+                                            <div>
                                                 <Image
                                                     onClick={() => this.setState({ vaseOpen: !vaseOpen })}
                                                     aria-controls="vase-collapse"
                                                     aria-expanded={vaseOpen}
                                                     width={90}
                                                     height={90}
-                                                    className="mr-3"
+                                                    className="mr-3 pulsing"
                                                     src={process.env.PUBLIC_URL + '/images/categories/vase.jpg'}
                                                     alt="Generic placeholder"
                                                     rounded
